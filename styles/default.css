@@ -1,0 +1,80 @@
+html, body {
+	background: #e0e0e0;
+	height: 100%;
+}
+a:link, a:visited {
+	color: #00f;
+	text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+#page-header {
+	background-color: #000;
+	color:#fff;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+#nav {
+	list-style: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 10px 0px 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 980px;
+	position: relative;
+}
+#page-body {
+	width: 960px;
+	background-color: #fff;
+	color: #000;
+	padding: 30px 20px 0px 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	min-height: 75%;
+}
+#nav li {
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+#nav a {
+	display: block;
+	padding: 5px;
+	color: #fff;
+	background: #404040;
+	text-decoration: none;
+}
+#nav a:hover {
+	background: #606060;
+	text-decoration: underline;
+}
+
+/** DROPDOWN CODE **/
+#nav ul {
+	background: #fff;
+	background: rgba(255, 255, 255, 0);
+	list-style: none;
+	position: absolute;
+	left: -9999px;
+}
+#nav ul li {
+	padding-top: 1px;
+	float: none;
+}
+#nav ul a { white-space: nowrap; }
+#nav li:hover ul { left: 0; }
+#nav li:hover a {
+	background: #606060;
+	text-decoration: underline;
+}
+#nav li:hover ul a {
+	background: #404040;
+	text-decoration: none;
+}
+#nav li:hover ul li a:hover { background: #606060; }
