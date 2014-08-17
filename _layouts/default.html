@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DeathsbreedGames: {% if page.title %} {{page.title}} {% endif %}</title>
+		<link rel="shortcut icon" href="/thumbnail.ico" />
+		<meta charset=utf-8 />
+		<meta name="author" content="Nicolas A. Ortega" />
+		<meta name="copyright" content="DeathsbreedGames" />
+		<meta name="license" content="CC-BY-SA" />
+		<meta name="keywords" content="Games, Open-Source, Free Software" />
+		<meta name="description" content="Free/Libre games." />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="/styles/default.css" />
+	</head>
+	<body>
+		<div id="page-header">
+			<center>
+				<br>
+				<h3><a href="/index.html" ><img src="/logo.png" alt="DeathsbreedGames" width="45%" /></a>
+				Free/Libre games.</h3><br>
+			</center>
+		</div>
+		<div id="page-menu">
+			<ul id="nav">
+				<li><a href="/index.html" >Home</a></li>
+				<li>
+					<a href="/games.html" >Games</a>
+					<ul>
+						<li><a href="/GNP/index.html" target="_blank" >GNP</a></li>
+						<li><a href="/GNP2/index.html" target="_blank" >GNP2</a></li>
+					</ul>
+				</li>
+				<li><a href="/contact.html" >Contact</a></li>
+				<li><a href="/about.html" >About</a></li>
+			</ul>
+		</div>
+		<div id="page-body" >
+			{{ content }}
+		</div>
+	</body>
+</html>
