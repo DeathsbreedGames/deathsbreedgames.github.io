@@ -34,11 +34,11 @@ p {
 }
 
 /* Links */
-p a, p a:visited {
+p a, p a:visited, a h3, a:visited h3 {
 	color: #F00;
 	text-decoration: none;
 }
-p a:hover {
+p a:hover, a:hover h3 {
 	text-decoration: underline;
 }
 
