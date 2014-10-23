@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>DeathsbreedGames: {% if page.title %} {{page.title}} {% endif %}</title>
-		<link rel="shortcut icon" href="/thumbnail.ico" />
+		<title>{% if page.title %} {{ page.title }} | {% endif %}DeathsbreedGames</title>
+		<link rel="shortcut icon" href="/imgs/thumbnail.ico" />
 		<meta charset="UTF-8" />
 		<meta name="author" content="Nicolas A. Ortega" />
 		<meta name="copyright" content="DeathsbreedGames" />
@@ -13,32 +13,53 @@
 		<link rel="stylesheet" type="text/css" href="/styles/default.css" />
 	</head>
 	<body>
-		<div id="page-header">
-			<center>
-				<br>
-				<h3><a href="/" ><img src="/logo.png" alt="DeathsbreedGames" width="45%" /></a>
-				Free/Libre games.</h3><br>
-			</center>
-		</div>
-		<div id="page-menu">
-			<ul id="nav">
-				<li><a href="/" >Home</a></li>
-				<li>
-					<a href="/games.html" >Games</a>
-					<ul>
-						<!--<li><a href="/SpaceRun/" target="_blank" >SpaceRun</a></li>-->
-						<li><a href="/GNP2/" target="_blank" >GNP2</a></li>
-						<li><a href="/GNP/" target="_blank" >GNP</a></li>
-					</ul>
-				</li>
-				<li><a href="https://github.com/DeathsbreedGames" target="_blank" >Github</a></li>
-				<li><a href="/contact.html" >Contact</a></li>
-				<li><a href="/about.html" >About</a></li>
-			</ul>
-		</div>
-		<div id="page-body" >
+		<br>
+		<div class="wrapper" >
+			<header>
+				<center>
+					<a href="/" ><img src="/imgs/logo.png" alt="DeathsbreedGames" width="60%" /></a>
+					<h3>Free/Libre Games.</h3>
+				</center>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						{% if page.title == "Home" %}
+							<a href="/" class="selected" >HOME</a>
+						{% else %}
+							<a href="/" >HOME</a>
+						{% endif %}
+					</li>
+					<li>
+						{% if page.title == "Games" %}
+							<a href="/games.html" class="selected" >GAMES</a>
+						{% else %}
+							<a href="/games.html" >GAMES</a>
+						{% endif %}
+					</li>
+					<li>
+						<a href="https://github.com/DeathsbreedGames" target="_blank" >GITHUB</a>
+					</li>
+					<li>
+						{% if page.title == "Contact Us" %}
+							<a href="/contact.html" class="selected" >CONTACT US</a>
+						{% else %}
+							<a href="/contact.html" >CONTACT US</a>
+						{% endif %}
+					</li>
+					<li>
+						{% if page.title == "About Us" %}
+							<a href="/about.html" class="selected" >ABOUT US</a>
+						{% else %}
+							<a href="/about.html" >ABOUT US</a>
+						{% endif %}
+					</li>
+				</ul>
+			</nav>
 			{{ content }}
 		</div>
-		<p style="text-align: center;" >Powered by <a href="https://pages.github.com/" target="_blank" >Github Pages</a>.</p>
+		<footer>
+			<p style="text-align: center;" >Powered by <a href="https://pages.github.com/" target="_blank" >Github Pages</a>.</p>
+		</footer>
 	</body>
 </html>
