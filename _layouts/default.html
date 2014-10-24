@@ -10,6 +10,11 @@
 		<meta name="keywords" content="Games, Open-Source, Free Software" />
 		<meta name="description" content="Free/Libre games." />
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		{% if page.type == "libgdx" %}
+			<script src="soundmanager2-setup.js" ></script>
+			<script src="soundmanager2-jsmin.js" ></script>
+			<link href="styles.css" type="text/css" rel="stylesheet" >
+		{% endif %}
 		<link rel="stylesheet" type="text/css" href="/styles/default.css" />
 		<link rel="stylesheet" type="text/css" href="/styles/buttons.css" />
 	</head>
@@ -63,4 +68,21 @@
 			<p style="text-align: center;" >Powered by <a href="https://pages.github.com/" target="_blank" >Github Pages</a>.</p>
 		</footer>
 	</body>
+	{% if page.type == "libgdx" %}
+		<script>
+			function handleMouseDown(evt) {
+				evt.preventDefault();
+				evt.stopPropagation();
+				evt.target.style.cursor = 'default';
+			}
+
+			function handleMouseUp(evt) {
+				evt.preventDefault();
+				evt.stopPropagation();
+				evt.target.style.cursor = '';
+			}
+			document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
+			document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
+		</script>
+	{% endif %}
 </html>

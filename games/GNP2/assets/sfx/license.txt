@@ -1,0 +1,6 @@
+The following files in this directory belong to DeathsbreedGames, and are
+licensed with a CC-BY-SA license:
+
+Pop.ogg
+Score.ogg
+The_Machines.ogg
