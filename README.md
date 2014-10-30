@@ -5,7 +5,7 @@ This is the source-code to the DeathsbreedGames official website, which is hoste
 ### Compiling
 To compile make sure to install [Jekyll](http://jekyllrb.com/), go to the root directory and run:
 ```bash
-jekyll build
+$ jekyll build
 ```
 The built HTML code will appear in `/_site`.
 
