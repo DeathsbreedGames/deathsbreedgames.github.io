@@ -13,6 +13,25 @@
 		{% if page.type == "libgdx" %}
 			<script src="soundmanager2-setup.js" ></script>
 			<script src="soundmanager2-jsmin.js" ></script>
+			<script>
+				function handleMouseDown(evt) {
+					evt.preventDefault();
+					evt.stopPropagation();
+					evt.target.style.cursor = 'default';
+				}
+
+				function handleMouseUp(evt) {
+					evt.preventDefault();
+					evt.stopPropagation();
+					evt.target.style.cursor = '';
+				}
+				document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
+				document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
+				window.addEventListener("keydown", handleKeyDown(evt) {
+					// Prevent space and arrow keys:
+					if([32, 37, 38, 39, 40].indexOf(evt.keyCode) > -1) { evt.preventDefault(); }
+				});
+			</script>
 			<link href="styles.css" type="text/css" rel="stylesheet" >
 		{% endif %}
 		<link rel="stylesheet" type="text/css" href="/styles/default.css" />
@@ -68,21 +87,4 @@
 			<p style="text-align: center;" >Powered by <a href="https://pages.github.com/" target="_blank" >Github Pages</a>.</p>
 		</footer>
 	</body>
-	{% if page.type == "libgdx" %}
-		<script>
-			function handleMouseDown(evt) {
-				evt.preventDefault();
-				evt.stopPropagation();
-				evt.target.style.cursor = 'default';
-			}
-
-			function handleMouseUp(evt) {
-				evt.preventDefault();
-				evt.stopPropagation();
-				evt.target.style.cursor = '';
-			}
-			document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
-			document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
-		</script>
-	{% endif %}
 </html>
