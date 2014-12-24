@@ -1,0 +1,14 @@
+The following works were created by CaptainCrunch80 <http://opengameart.org/users/captaincrunch80>,
+and are licensed under the CC0 (Public Domain) license:
+
+background_glowy.png
+ball_glowy.png
+player_glowy.png
+
+The following file were created by DeathsbreedGames <http://deathsbreedgames.github.io/>,
+and are licensed under the CC-BY-SA (Creative Commons Attribution-ShareAlike) license:
+
+cursor.png
+DeathsbreedGames_Production.png
+LoadingBar.png
+logo.png

@@ -1,0 +1,10 @@
+The following files were created by CaptainCrunch80 <http://opengameart.org/users/captaincrunch80>,
+and are licensed with the CC0 (Public Domain) license:
+
+hitsfx.ogg
+scoresfx.ogg
+
+The following files were created by FoxSynergy <http://opengameart.org/users/foxsynergy>,
+and are licensed with the CC-BY 3.0 (Creative Commons Attribution) license:
+
+Never_Stop_Running.ogg
